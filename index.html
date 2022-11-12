@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel/Slideshow</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
 </head>
+
 <body>
-    <section aria-label="Newest Photos">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-            <button class="corousel-button next" data-carousel-button="next">&#8658;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="image1.jpg" alt="image #1" width="50%">
-                </li>
 
-                <li class="slide">
-                    <img src="image2.jpg" alt="image #2">
-                </li>
+  <div class="slideshow-container">
 
-                <li class="slide">
-                    <img src="image3.jpg" alt="image #3">
-                </li>
-            </ul>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="image1.jpg" style="width:100%">
+      <div class="text">Tobie on Isi-Agu</div>
+    </div>
 
-        </div>
-    </section>
-    git 
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="image2.jpg" style="width:100%">
+      <div class="text">Tobie on Agbada</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="image3.jpg" style="width:100%">
+      <div class="text">Tobie on Chief-Damask</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="image4.jpg" style="width:100%">
+      <div class="text">Tobie on Chieftain</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="image5.jpg" style="width:100%">
+      <div class="text">Tobie we Love you</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="image6.jpg" style="width:100%">
+      <div class="text">Tobie says Hi</div>
+    </div>
+
+    <!-- buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
 </body>
+
 </html>
